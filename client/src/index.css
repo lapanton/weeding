@@ -1,0 +1,349 @@
+@import "~materialize-css/dist/css/materialize.min.css";
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100';
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.brand-logo{
+  font-family: "Roboto Mono",monospace;
+}
+.other-bg{
+  font-family: "Roboto Mono",monospace;
+  font-weight: bold;
+}
+[type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:after{
+  background-color: #ad1457 !important
+}
+[type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:before, [type="radio"].with-gap:checked+span:after{
+  border: 2px solid #ad1457 !important
+}
+[type="checkbox"]:checked+span:not(.lever):before{
+  border-right: 2px solid #ad1457 !important;
+  border-bottom: 2px solid #ad1457 !important;
+}
+.btn, .btn-large, .btn-small{
+  background-color: #ad1457 !important;
+}
+.hidden{
+  display: none;
+}
+/*body{*/
+/*  background: pink;*/
+/*}*/
+
+input.yellow-input {
+  text-indent: 10px;
+  border-bottom: 1px solid #fff!important;
+  box-shadow: 0 1px 0 0 #fff!important;
+}
+
+input.yellow-input + label {
+  color: #ffffff!important;
+  background: transparent;
+}
+
+/*input.yellow-input:focus + label {*/
+/*  color: #ffeb3b!important;*/
+/*}*/
+
+/*input.yellow-input:focus {*/
+/*  border-bottom: 1px solid #ffeb3b!important;*/
+/*  box-shadow: 0 1px 0 0 #ffeb3b!important;*/
+/*}*/
+.text-center{
+  text-align: center;
+}
+
+
+
+label span {
+  color: #000;
+  font-size: 15px;
+}
+.input-field input{
+  color: #fff !important;
+}
+textarea{
+  margin-top: 10px;
+  height: auto;
+  padding: 10px;
+  border-radius: 7px;
+}
+.mtb10{
+  margin: 10px 0 10px 0;
+}
+
+.card{
+  width: 500px;
+  display: inline-block;
+}
+
+.main-bg{
+  width: 100vw;
+  height: 100%;
+  background: url("img/main-bg.jpg");
+  padding: 10px;
+  color: #fff !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.main-bg:after{
+  content: "";
+  position: absolute;
+  background: rgba(0,0,0,.5);
+  width: 100vw;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.container{
+  z-index: 1;
+  position: relative;
+}
+
+a{
+  color: #f8bbd0
+}
+
+a:hover{
+  color: #c2185b;
+  text-decoration: none;
+}
+
+.wait-for ul li{
+  font-size: 20px;
+}
+.mr5{
+  margin-right: 5px;
+}
+
+.textBold{
+  font-weight: bolder;
+}
+
+.container-text{
+  font-family: 'Roboto Mono', monospace;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.text {
+  font-weight: 100;
+  font-size: 28px;
+  color: #f7accd;
+  white-space: nowrap;
+}
+.dud {
+  color: #f7accd;
+}
+.toast{
+  color: #fff !important;
+  background: #c2185b !important;
+}
+
+.input-field .color-input{
+  color: #000 !important;
+}
+
+/*Timer*/
+.circle {
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  transition: stroke-dashoffset .4s cubic-bezier(.4, 0, 0, 1.7);
+}
+.clock {
+  font-family: 'Roboto Mono', monospace;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.clock__amount {
+  font-size: 3.75rem;
+}
+.clock__text {
+  -webkit-box-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  height: 100%;
+  -webkit-box-pack: center;
+  justify-content: center;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+}
+.clock__display {
+  height: 160px;
+  position: relative;
+  width: 160px;
+}
+/*/timer*/
+
+::-webkit-input-placeholder { /* Edge */
+  color: rgba(0,0,0,.47);
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: rgba(0,0,0,.47);
+}
+
+::placeholder {
+  color: rgba(0,0,0,.47);
+}
+.line-h h6{
+  line-height: 1.80rem;
+}
+.text-right{
+  text-align: right;
+}
+/*.wrapper-detail{*/
+/*  background: url("img/zal.jpg");*/
+/*  background-size: cover;*/
+/*  background-position: center center;*/
+/*  width: 100%;*/
+/*  height: 100%;*/
+/*  padding: 20px;*/
+/*  color: #fff;*/
+/*}*/
+
+
+.wait-for {
+  border: 2px solid rgba(255,255,255,.4);
+  border-radius: 13px;
+  width: 450px;
+  display: inline-block;
+}
+
+.wait-for h6{
+  font-weight: bolder;
+}
+.wait-for ul li span {
+  font-family: 'Roboto Mono', monospace;
+  color: rgba(255,255,255,.9);
+}
+
+.amazing-bg{
+  background: linear-gradient(90deg, #80deea, #64b5f6, #f48fb1, #ce93d8);
+  background-size: 400% 400%;
+  animation: bg-gradient 20s ease infinite;
+  display: flex;
+  /*flex-flow: column nowrap;*/
+  /*align-items: center;*/
+  /*justify-content: center;*/
+  min-height: 100vh;
+  color: #fff;
+}
+
+.amazing-bg p {
+  font-size: 18px;
+  line-height: 16px;
+}
+
+@keyframes bg-gradient {
+  0% {
+    background-position: 0% 51%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 51%;
+  }
+}
+.amazing-bg h4{
+  font-family: "Roboto Mono",monospace;
+  font-weight: bolder;
+}
+.amazing-bg .btn {
+  margin: 20px 0;
+}
+.amazing-bg ul {
+  margin: 0;
+  padding: 0;
+}
+
+.marquee {
+  width: 100%;
+  background-color: #ad1457 !important;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.marquee p {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 25s linear infinite;
+}
+@keyframes marquee {
+  0%   { transform: translate(0, 0); }
+  100% { transform: translate(-100%, 0); }
+}
+
+@keyframes wave {
+  0% {
+    transform: translateX(0) translateZ(0) scaleY(1)
+  }
+  50% {
+    transform: translateX(-25%) translateZ(0) scaleY(0.55)
+  }
+  100% {
+    transform: translateX(-50%) translateZ(0) scaleY(1)
+  }
+}
+
+@media only screen and (max-width: 992px){
+  nav .brand-logo {
+    font-size: 16px;
+    transform: none;
+    left: 5%;
+  }
+  .hide-on-med-and-down{
+    display: inline-block !important;
+  }
+  .card{
+    width: 100%;
+  }
+  .main-bg h6{
+    font-size: 16px;
+  }
+  .wait-for{
+    width: 100%;
+    padding: 0 23px;
+  }
+  .wait-for ul li{
+    font-size: 16px;
+  }
+  .main-bg{
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+  }
+  .main-bg:after{
+    height: 100%;
+  }
+  .amazing-bg p {
+    font-size: inherit;
+    line-height: inherit;
+  }
+  .amazing-bg h4{
+    font-size: 24px;
+  }
+  .clock__display{
+    width: 145px;
+    height: 145px;
+    margin: 5px;
+  }
+}
